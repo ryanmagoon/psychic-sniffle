@@ -1,0 +1,14 @@
+What is REST Anyway?
+
+Roy Fielding's Disertation
+
+ReST - representational state transfer
+
+The Constraints:
+
+    Client, Server - request, response
+    
+    Stateless Server - instead of worrying about maintaining state between servers when scaling out, don't create situations where state is necessary at all. Everything that the server needs to process the request should be in the request. Based on that request and all the information in the request, it'll send a response to the server.
+    If you find yourself on the server storing information about the request or about the client, you're not writing a truly RESTful service.
+    
+    Caching - When you're sending information back and forth, sometimes you're sending information that doesn't change often i.e. a list of clients or a list of books. So this constraint says to let the client know how long a certain piece of data is good for, so that the client doesn't have to come back to the server for that data over and over again.
