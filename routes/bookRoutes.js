@@ -50,9 +50,6 @@ var routes = function(Book) {
       req.book.save();
       res.json(req.book);
 
-  })
-  .patch(function(req, res) {
-
   });
   return bookRouter;
 };
